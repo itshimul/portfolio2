@@ -1,0 +1,225 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin:0;
+	font-family: 'Poppins', sans-serif;
+}
+a{
+	cursor:pointer;
+	color:red;
+	font-weight:bold;
+}
+h1{
+	font-size:50px;
+}
+h1 span{
+	
+	color:orange;
+}
+
+.top-banner{
+	background-image: url(images/top-banner.png);
+	background-repeat:no-repeat;
+}
+section{
+	padding:15px 0 0 0;
+	height:500px;
+	margin-bottom:150px;
+	position:relative;
+	overflow:hidden;
+}
+#self .self-img{
+	float:right !important;
+	margin-left: 0;
+    padding-left: 0;
+    margin-right: 5%;
+}
+
+.half-width{
+	width:40%;	
+	float:left;
+	margin-left: 5%;
+    padding-left: 2%;	
+}
+.half-width p{
+	color:dimgrey;
+	line-height:1.5em;
+	font-size:17px;
+	text-align:justify;
+}
+.half-width button{
+	padding: 10px 40px;
+    background: linear-gradient(90deg, #FF926F, #FF6C4F);
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    margin-top: -8px;
+	transition:background 3s ease;
+}
+.half-width button:hover{
+	background: linear-gradient(180deg, #FB6F5B, #FF6C4F);
+	cursor:pointer;
+}
+.half-width img{
+	width:100%;
+}
+.dream-bg{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.section_3{
+	margin-bottom: 30px;	
+}
+/*Bubbls Effect*/
+.bubbles img{
+	width:50px;
+	animation: bubble 7s linear infinite;
+}
+.bubbles{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	position:absolute;
+	bottom:-70px;
+}
+@keyframes bubble {
+	0%{		
+		transform:translateY(0);
+		opacity:0;
+	}
+	50%{		
+		opacity:1;
+	}
+	70%{		
+		opacity:1;
+	}
+	100%{		
+		transform:translateY(-70vh);
+		opacity:0;
+	}
+}
+.bubbles img:nth-child(1){
+	width:25px;
+	animation-delay:2s;
+}
+.bubbles img:nth-child(2){
+	animation-delay:1s;
+}
+.bubbles img:nth-child(3){
+	width:25px;
+	animation-delay:3s;
+}
+.bubbles img:nth-child(4){
+	animation-delay:4.5s;
+}
+.bubbles img:nth-child(5){	
+	animation-delay:3s;
+}
+.bubbles img:nth-child(6){
+	width:20px;
+	animation-delay:6s;
+}
+.bubbles img:nth-child(7){
+	width:35px;
+	animation-delay:7s;
+}
+
+/**/
+.section_3 h1{
+	font-size:40px;
+	padding-bottom:10px;
+	color:white;
+}
+.section_3 h3{
+	font-size:20px;
+	color:orange;
+}
+.section_3 p{	
+	color:white;
+}
+.box{
+	box-shadow: 5px 10px 35px grey;
+    padding: 40px 20px 90px 20px;
+	height: 300px;
+	background:url(images/background.png);
+	background-size: cover;
+	position:relative;
+	overflow:hidden;
+	z-index:-9;
+}
+.box:nth-child(1){
+	border-left:8px solid;
+	border-image: linear-gradient(180deg, #FF9E78, #FF6549);
+	border-image-slice: 1;	
+}
+.box:nth-child(2){
+	border-left:8px solid;
+	border-image: linear-gradient(180deg, blue, cyan);
+	border-image-slice: 1;	
+}
+.exp-bg{
+	position: absolute;
+    left: -2px;
+    top: 180px;
+    z-index: -10;
+	opacity: 0.9;
+}
+
+/*Responsive Style*/
+@media only screen and (max-width: 1100px) {
+  section{
+	  height:auto;
+	  margin-bottom:20px;	  
+  }
+  .half-width{
+	width:90%;
+	margin: 20px auto auto auto;
+	float:none;	
+	display:block;
+	padding: 0px 20px 0px 20px;	
+	}
+	#self .self-img{    
+    margin-right: 0;
+	margin-left:0;
+	}
+	.self-img img{
+		display:block;
+		margin:auto;
+		width:80%;
+	}
+	.res_h1{
+		display:inline;
+				
+	}
+	.dream-bg{
+		z-index:-1;
+	}
+	.exp-bg{
+		
+		opacity:1;
+	}
+.box:nth-child(1){
+	border-left:8px solid;
+	border-image: linear-gradient(180deg, #FF9E78, #FF6549);
+	border-image-slice: 1;	
+}
+.box:nth-child(2){
+	border-left:0;
+	border-right:8px solid;
+	border-image: linear-gradient(180deg, blue, cyan);
+	border-image-slice: 1;	
+}
+.section_3 h1 { 
+	margin:0;
+	padding: 15px 0 0 0px;
+}
+.box{
+	height: auto;
+}
+}
+
