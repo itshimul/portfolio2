@@ -43,10 +43,11 @@ section{
     padding-left: 2%;	
 }
 .half-width p{
-	color:dimgrey;
-	line-height:1.5em;
-	font-size:17px;
-	text-align:justify;
+	color: dimgrey;
+	line-height: 1.8em;
+	font-size: 17px;
+	text-align: justify;
+	margin-bottom: 25px;
 }
 .half-width button{
 	padding: 10px 40px;
