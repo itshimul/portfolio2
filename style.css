@@ -184,6 +184,13 @@ section{
 	display:block;
 	padding: 0px 20px 0px 20px;	
 	}
+	.half-width p {
+	line-height: 3em;
+	font-family: revert;}
+	.half-width button {
+	padding: 30px 45px;
+	font-size: 30px;
+	}
 	#self .self-img{    
     margin-right: 0;
 	margin-left:0;
